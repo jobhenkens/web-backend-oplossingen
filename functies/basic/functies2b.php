@@ -1,24 +1,39 @@
 <?php
 
-	$container = array();
+#	$container = array();
 
-	$figuren = array(helden => array( 'spiderman', 'superman', 'antman', 'wolverine'), 
-			     	 antihelden => array('BDW', 'Krimson', 'Gargamal', 'Mr. Burns')
-			     	);
+#	$figuren = array( 'spiderman', 'superman', 'antman', 'wolverine');
 
-	function drukArrayAf($array){
+	$figuren = array(array( 'Spiderman', 'Superman', 'Antman', 'Wolverine'), 
+			     	 array('BDW', 'Krimson', 'Gargamal', 'Mr. Burns')
+			     	); 
+
+
+	function drukArrayAf($figuren){
 
 		$result = array();
 
-		foreach ($array as $key => $value) {
-				 $result[] =  '$helden [' . $key . '] heeft de waarde ' . $value . '.';
-		}
+		for ($arrayCounter = 0; $arrayCounter < count($figuren); ++$arrayCounter) {
+
+				$container = array();
+
+				for( $arrayCounter2 = 0; $arrayCounter2 < count($figuren[$arrayCounter]); ++$arrayCounter2 ){
+
+					$container[ ] = $figuren[$arrayCounter][$arrayCounter2]; 
+
+				}
+		
+		$result[$arrayCounter] =  $container;
+				 
+		} 
 
 		return $result;
 
 	}
 
 	$resultaat = drukArrayAf($figuren);
+
+	/* of gebruik array_merge() !!!! */
 
 	
 
@@ -61,9 +76,6 @@
 		return $result;
 
 
-
-
-
 	}
 
 ?>
@@ -81,20 +93,19 @@
 <body class="web-backend-inleiding">
 
 	<section class="body">
-
-	<!--	<p><?php foreach (drukArrayAf( $helden ) as $value): ?> 
-			<?= $value ?>
+	<p>
+		<?php foreach ($resultaat as $key => $value): ?>
+					<h2><?= $key ?></h2>
+					<?php foreach ($resultaat[$key] as $value ): ?>
+						<p><?= $value ?></p>
+					<?php endforeach ?>
 		<?php endforeach ?>
-		</p> -->
+	</p>
 
-		<p><?= drukArrayAf( $figuren ) ?></p>
-
-		<!-- <p><?= validateHtmlTag( $html ) ?></p> -->
-
-		<p><?php foreach (validateHtmlTag( $html ) as $value): ?> 
-			<?= $value ?>
-		<?php endforeach ?>
-		</p>
+	<?php foreach (validateHtmlTag( $html ) as $value): ?> 
+		<p><?= $value ?></p>
+	<?php endforeach ?>
+	
 
 	</section>	
 

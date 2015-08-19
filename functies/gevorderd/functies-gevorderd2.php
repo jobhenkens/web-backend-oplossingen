@@ -3,21 +3,17 @@
 	$pigHealth = 5;
 	$maximumThrows = 8;
 
-	function calculateHit($pigHealth, $maximumThrows){
+	function calculateHit(){
 
-		$raakKans = rand(0,100);
+		$randNr = rand(0,100);
 
-		$result= '';
+		$result = FALSE;
 
-			if ($raakKans > 60) {
+			if ($randNr > 60) {
 
 				$result = TRUE;
 
-			} else {
-
-				$result = FALSE;
-
-			}
+			} 
 
 		return $result;
 
@@ -32,7 +28,7 @@
 			
 			++$fCount;
 			
-			if (calculateHit($pigHealth, $maximumThrows)){
+			if (calculateHit()){
 
 
 				if ($pigHealth === 2) {
@@ -113,6 +109,8 @@
 <body class="web-backend-inleiding">
 
 	<section class="body">
+
+		<h2>ANGRY BIRDS!</h2>
 
 		<p>
 			<?= launchAngryBird($pigHealth, $maximumThrows) ?>
