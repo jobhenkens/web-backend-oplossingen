@@ -1,0 +1,49 @@
+<?php
+
+
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Include - Require</title>
+	<link rel="stylesheet" type="text/css" href="http://web-backend.local/css/global.css">
+	<link rel="stylesheet" type="text/css" href="http://web-backend.local/css/directory.css">
+	<link rel="stylesheet" type="text/css" href="http://web-backend.local/css/facade.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="web-backend-inleiding">
+
+	<section class="body">
+
+		<header>
+			<h2>Daily PHP</h2>
+			<nav>
+				<ul>
+					<li>Nieuws</li>
+					<li>Onze redactie</li>
+					<li>Contact</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<h3>Nieuws</h3>
+				<article>
+					<h3><?= $value['titel'] ?></h3>
+					<p><?= $value['datum'] ?></p>
+					<p><?= $value['inleiding'] ?><a href="#">Lees meer...</a></p>
+				</article>
+		</main>
+
+		<footer>
+			<p>Daily PHP is een blog over PHP.</p>
+		</footer>
+
+	</section>
+
+</body>
+</html>

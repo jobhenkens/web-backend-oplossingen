@@ -1,5 +1,7 @@
 <?php
 
+	/* $currentfilename = basename( $_SERVER['PHP_SELF'] ); Om current page path (laatste stuk van filename tekrijgen, dan moet je dat niet altijd aanpassen in code...) */
+
 	session_start();
 
 	if ( !isset( $_SESSION['submitOverzicht'] ) ) {
@@ -16,7 +18,7 @@
 		if($_GET['session'] === 'destroy')
 		{
 			session_destroy();
-			header('Location: adresgegevens.php'); // staat in voor refresh
+			header('Location: registratie.php'); // staat in voor refresh
 		}
 	
 	}

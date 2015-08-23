@@ -2,8 +2,6 @@
 
 	session_start();
 
-
-
 	// Sessie verwijderen
 	if (isset($_GET['session']))
 	{
@@ -13,6 +11,7 @@
 			header('Location: registratie.php'); // staat in voor refresh
 		}
 	}
+
 
 	if ( isset( $_POST['submit'] ) ) {
 		
@@ -34,8 +33,6 @@
 	}
 
 
-
-
 	if ( isset( $_SESSION['submitOverzicht'] ) ) {
 
 		$straatInputSess = $_SESSION['straat'];
@@ -55,32 +52,6 @@
 
 	#var_dump($GLOBALS);
 
-
-/*	if ($_POST['straat']) {
-
-		$straatInput = $_POST['straat'];
-		$nummerInput = $_POST['nummer'];
-		$gemeenteInput = $_POST['gemeente'];
-		$postcodeInput = $_POST['postcode'];
-
-	} */
-
-/*	if( isset( $_POST['submit'] ) ) {
-
-		$nicknameInput = $_POST['email'];
-		$emailInput = $_POST['nickname'];
-
-		if ( $password == $passwordInput && $username == $usernameInput ) {
-
-			$message = 'Welkom!';
-			
-		} else {
-
-			$message = 'Sorry, je gaf verkeerde data in. Probeer opnieuw...';
-
-		} 
-
-	} */
 
 ?>
 
@@ -121,10 +92,6 @@
 					<input type="number" name="postcode" value="<?= $postcodeInputSess ?>" <?= ( $_GET['focus'] == 'postcode' ) ? 'autofocus' : '' ?>>
 				</li>	
 				<li><input type="submit" value="Volgende" name="submitOverzicht"></li>
-
-			
-				
-
 			</ul>
 		</form>
 		<a href="adresgegevens.php?session=destroy">Verwijder alle gegevens en ga terug naar de registratie</a>

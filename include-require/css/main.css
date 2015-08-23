@@ -1,0 +1,60 @@
+body{
+
+	margin-top: 0px;
+	padding-top: 0px;
+	margin: 0 auto;
+}
+
+header {
+	background: #000;
+	color: #FFF;
+	padding: 5px;
+}
+
+nav li {
+
+	display: inline;
+	color: #FFF;
+}
+
+nav li a {
+
+	color: #FFF;
+	padding: 10px;
+	font-size: 110%;
+
+}
+
+article {
+
+	float: left;
+	width:30%;
+	height: 100px;
+	padding:10px;
+	margin:10px;
+	display:table;
+
+}
+
+h3{
+
+	padding:10px;
+	margin: 10px;
+}
+
+h4{
+
+	margin-top: 3px;
+}
+
+footer{
+
+	content:"";
+	display:table;
+	clear:both;
+	width: 100%;
+	background: #CCC;
+	text-align: center;
+	font-weight: bold;
+
+}

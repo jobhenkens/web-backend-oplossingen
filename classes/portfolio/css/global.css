@@ -1,0 +1,156 @@
+body { background:#FFF;
+	   font:100%/1.3 Helvetica, Arial, sans-serif;
+	   color: #333;
+	   width:100%;
+		margin:0 auto;
+	 }
+
+
+header {  height:100px;
+		  background:#FFF;
+		  padding: 20px 0 20px 0;
+		  border-bottom: 4px solid #CCC;
+		  width:85%;
+		  margin:0 auto;
+
+		 }
+
+header img {
+	float: left;
+	position: absolute;
+    top: 2.3%;
+    left:7.7%;
+    max-width: 100%;
+
+}
+
+nav { 	background:#FFF;
+		float: right;
+		min-width: 200px;
+		border-bottom:4px solid #CCC;
+		border-right:4px solid #CCC;
+		border-left:4px solid #CCC;
+	    }
+
+main { 	min-height:400px;
+ 		background:#FFF;
+ 		width:60%;
+ 		padding:20px;
+ 		float: left;
+ 		margin:1.6% 4% 0 6%;
+
+ 		
+ 		/*overflow:hidden; /* alles wat uit de block navigatie overloopt wordt verborgen! 
+	    clear:both;
+	    zoom:1;
+	    _overflow:visible; /* float fix van elementen in nav */
+
+	}
+
+aside {
+	width:21.25%;
+	float: left;
+	border-top:4px solid #CCC;
+	border-bottom:4px solid #CCC;
+	border-left:4px solid #CCC;
+	padding: 10px 20px; 
+	margin:1.2%;
+}
+
+footer { height:100px;
+		  width: 85%;
+		  margin:0 auto;
+		  border-top:4px solid #CCC;
+		  padding-top: 40px;
+		  padding-bottom: 40px;
+		  font-family: track;
+
+		  overflow:hidden; /* alles wat uit de block navigatie overloopt wordt verborgen! */
+	    clear:both;
+	    zoom:1;
+	    _overflow:visible; /* float fix van elementen in nav */
+		  }
+
+h1 { /*padding:20px 0;*/
+	 color:#DD3C22;
+	 font-size:120%;
+	 font-weight:bold;
+	 float: left;
+	 font-family: track;
+	 margin-left: 220px;
+	 margin-top: -0.3%;	  }
+	 
+h2 { color:#DD3C22;
+	 border-bottom:2px solid #DD3C22;
+	 margin:25px 0 10px;
+	 font-size:130%;
+	 font-family: track;
+	  }
+
+h3 {
+	 color:#DD3C22;
+	 margin:15px 0 3px;
+	 font-family: track;
+
+}
+
+main .kolom { float:left;
+	      	   width:23.5%;
+	           margin-right:2%;
+	            }
+
+main .last { margin-right:0; }
+
+header span{
+	 padding:13px 0;
+	 color:#333;
+	 font-size:70%;
+}
+	 
+/* -----------------------------    navigatie stijlen */
+
+a { color:#DD3C22;
+	text-decoration:underline; }
+
+a:hover { text-decoration:none;
+		  color:#333;
+		   }
+		  
+nav a{  display:block;
+		 color:#333;
+		 text-align:center;
+		 height:50px;
+		 padding:15px 20px 0;
+		 font-weight:bold;
+		 background:#FFF;
+		 text-decoration:none;
+		 font-family: track;
+		 font-size: 120%;
+		  }
+
+header a {
+	text-decoration: none;
+	 color:#333;
+}
+
+header a:hover {
+	text-decoration: none;
+	color:#DD3C22;
+	font-size: 105%;
+}
+
+nav a:hover { text-decoration:none;
+	    	   color:#DD3C22;
+	    	   font-size: 125%; 
+	    	}
+
+				
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  

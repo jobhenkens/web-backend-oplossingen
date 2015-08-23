@@ -1,0 +1,8 @@
+<h3>Nieuws</h3>	
+	<?php foreach ($artikels as $key => $value): ?>	
+			<article>
+				<h4><?= $value['titel'] ?></h4>
+				<p><?= $value['datum'] ?></p>
+				<p><?= $value['inleiding'] ?><a href="#">Lees meer...</a></p>
+			</article>
+	<?php endforeach ?>
