@@ -1,0 +1,30 @@
+RewriteEngine On
+
+#het path mag geen directory (!-d) of file (!-f) zijn!
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?hook=$1 [L]
+
+
+
+
+#RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ index.php?controller=$1&method=$2&id=$3
+#RewriteRule ^bieren/insert/?$ index.php?controller=bieren&method=insert
+
+############ 1. maak één groep die alles na de domeinnaam opvangt en naar index.php?hook=$1 omleidt
+
+#https://github.com/pascalculator/web-backend/blob/master/public/cursus/voorbeelden/voorbeeld-mvc-step-by-step-03/public/.htaccess
+
+#RewriteEngine On
+
+# het path mag geen directory (!-d) of filename (-f) zijn
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+
+# Het deel na de root worden meegegeven als get-variabele aan index.php
+#RewriteRule ^(.*)$ index.php?hook=$1 [L]
+
+#PT = passthrough, zal redirecten ook al is het geen file
+#L = last, zal stoppen wanneer aan deze regel voldaan wordt

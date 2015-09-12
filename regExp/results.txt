@@ -1,0 +1,15 @@
+1. regEx: [a-dA-Du-zU-Z]
+	string: Memory can change the shape of a room; it can change the color of a car. And memories can be distorted. They're just an interpretation, they're not a record, and they're irrelevant if you have the facts.
+	result: Memor# #n #h#nge the sh#pe of # room; it #n #h#nge the #olor of # #r. #n# memories #n #e #istorte#. The#'re j#st #n interpret#tion, the#'re not # re#or#, #n# the#'re irrele#nt if #o# h#e the f#ts.
+
+2. regEx: color|colour of colou?r
+	string: Zowel colour als color zijn correct Engels.
+	result:  Zowel # als # zijn correct Engels.
+
+3. regEx: 1\d{3}
+	string: 1020 1050 9784 1560 0231 1546 8745
+	result:  # 1050 9784 1560 0231 1546 8745
+
+4. regEx: [^ en] check naar echte matches...
+	string: 24/07/1978 en 24-07-1978 en 24.07.1978
+	result:  ########## en ########## en ##########
